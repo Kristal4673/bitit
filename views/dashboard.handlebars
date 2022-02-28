@@ -1,0 +1,42 @@
+<div class='row'>
+  <div class='col-auto'>
+    <h2>Welcome, {{name}}!</h2>
+  </div>
+</div>
+
+<div class='mt-4'>
+
+  {{#if blogposts.length}}
+    <div class=''>
+      <h3>Your blogposts:</h3>
+
+      {{#each blogposts as |blogpost|}}
+        <div class='post__wrapper'>
+          <div class=''>
+            <div class='post_header'>
+              <h4>{{blogpost.title}}</h4>
+            </div>
+            <P class='pl-2 pr-2 mt-2 mb-2'>{{blogpost.content}}</P>
+          </div>
+          <div class='delete_Edit_Button'>
+            <button
+              class='btn btn-md btn-danger delete_button'
+              data-id='{{blogpost.id}}'
+            >DELETE</button>
+            <a href='/update/{{blogpost.id}}'>update</a>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  {{else}}
+    <h1>You have no blogposts</h1>
+  {{/if}}
+</div>
+{{! below is link to add new post }}
+<div class='add_post_div'>
+  <button class='btn btn-md btn-primary new_post'><a
+      class='new_post'
+      href='/new-post'
+    >New post</a></button>
+</div>
+<script src='./js/dashboard.js'></script>

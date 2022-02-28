@@ -1,7 +1,7 @@
 {
-  "name": "crowd-funding",
+  "name": "BitIT",
   "version": "1.0.0",
-  "description": "",
+  "description": "Tech blog hm",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

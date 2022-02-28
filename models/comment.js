@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../../SMU-BOOTCAMP /assignments/bitit/config/connection');
+const sequelize = require('../config/connection');
 class comment extends Model {}
 comment.init(
   {

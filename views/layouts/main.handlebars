@@ -5,23 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BitIt</title>
-  <link rel="stylesheet" href="/css/jass.css">
+  
   <link rel="stylesheet" href="/css/style.css">
-  <!-- Compressed CSS -->
+ 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
-<!-- Compressed JavaScript -->
+
 <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class="flex-column justify-space-around">
-    <header class="display-flex justify-space-between align-center p-2">
+  <div class="blogBody">
+    <header class="blogBody">
       <h1>
         <span role="img" aria-label="money"> 💻 </span>
         <a href="/">BitIt</a>
       </h1>
       <nav>
-        <!-- Conditionally render login or logout links -->
+   
         <a href="/">Homepage</a>
         {{#if logged_in}}
         <a href="/dashboard">dashboard</a> |
@@ -32,7 +32,7 @@
       </nav>
     </header>
     <main class="container container-fluid mt-5">
-      <!-- Render the sub layout -->
+  
       {{{ body }}}
     </main>
     <footer>
@@ -40,7 +40,7 @@
     </footer>
   </div>
 
-  <!-- Render script for logged in users only -->
+
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}

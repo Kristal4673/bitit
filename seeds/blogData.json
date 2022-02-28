@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Billy Joe",
+    "content": "my cat is going to the moon today",
+    "follower_comments": "{{Input}}",
+    "date_created": "{{Input}}",
+    "userId": 1
+  },
+  {
+    "id": 2, 
+    "title": "Little Timmy ",
+    "content": "Christmas is great this year!",
+    "follower_comments": "{{Input}}",
+  "date_created": "{{Input}}",
+  "userId": 2
+  },
+  {
+    "id": 3, 
+    "title": "Mark Den",
+    "content": "Game day! ",
+    "follower_comments": "{{Input}}", 
+    "date_created": "{{Input}}",
+    "userId": 3
+  }
+]

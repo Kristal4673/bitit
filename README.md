@@ -58,3 +58,5 @@ github: https://github.com/Kristal4673/bitit.git
 
 
 ## ScreenShots  
+![IMG](IMG/login.png)
+![IMG](IMG/home.png)
